@@ -1,0 +1,384 @@
+@media only screen and (max-width: 1200px) {
+    :root {
+
+        /* Paddings */
+        --primary-padding: 0 5%;
+        --primary-margin: 0 10%;
+        --nav-height: 70px;
+    }
+    .banner-first{
+        --height-banner: 485px;
+        background: url('../assets/IMAGES/WEB/BannerPrincipal/BannerPrincipal-1280.png');
+        background-repeat: no-repeat;
+        background-size: 100vw var(--height-banner);
+        height: calc(var(--height-banner));
+        max-width: 100vw;
+        max-width: 100%;
+        display: block;
+    }
+    .banner-second{
+        --height-banner: 485px;
+        color: var(--branco);
+        background: url('../assets/IMAGES/WEB/BannerSecundario/BannerSecundario-1280.png');
+        background-repeat: no-repeat;
+        background-size: 100vw var(--height-banner);
+        height: calc(var(--height-banner) - var(--nav-height));
+        padding: 2% 5%;
+        max-width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 6%;
+    }
+    .banner-register > p{
+        text-indent: 20px;
+        font-size: 15px;
+    }
+    .video{
+        width: 50%;
+        height: 100%;
+        text-align: center;
+    }
+    .register{
+        font-size: 1.5rem;
+        margin: 10% 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-right: 20%;
+    }
+    .title-area-active{
+        font-size: 25px;
+        font-family: 'UnimedSlab2020-Xb';
+        color: var(--branco);
+        position: relative;
+        top: 30px;
+        padding: 10px 20px;
+        background-color: var(--verde);
+        border-radius: 10px 10px 0px 10px;
+        width: 300px;
+    }
+    .area-benefits{
+        width: 460px;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: fit-content;
+        display: grid;
+        column-gap: 20px;
+        row-gap: 20px;
+        justify-items: center;
+    }
+    .box-benefits{
+        padding: 20px 20px;
+        font-size: 16px;
+        width: 220px;
+        height: 220px;
+    }
+    .box-area-active{
+        padding: 8% 10%;
+
+    }
+    .box-benefits > img{
+        width: 110px;
+        height: 90px;
+        margin-bottom: 20px;
+    }
+    .speakers{
+        color: var(--cinza-escuro2);
+        text-align: center;
+        margin: var(--primary-margin);
+        background-color: var(--branco);
+    }
+    .title-speakers{
+        font-family: 'UnimedSans2020-Bd';
+        font-size: 18px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-items: center;
+        align-items: baseline;
+        
+    }
+    .subtitle-speakers{
+        margin: 10px 0;
+        font-family: 'UnimedSans2020-Rg';
+        font-size: 15px;
+    }
+    .name-speakers{
+        font-family: 'UnimedSans2020-Sb';
+        font-size: 20px;
+    }
+    .occupation-speakers{
+        font-family: 'UnimedSans2020-Bk';
+        font-size: 18px;
+    }
+    .row-area-photo{
+        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        margin-top: 2%;
+        margin-bottom: 3%;
+    }
+    .area-photo > img{
+        padding: 20px 8px 0px 8px;
+        border: 8px solid var(--verde);
+        border-radius: 12px 12px 0px 12px;
+        height: 180px;
+        width: 150px;
+    }
+    /* FORM */
+    .area-form-register img{
+        padding: 20%;
+        width: 100%;
+    }
+    .form-register > label{
+        font-size: 14px;
+        color: var(--verde-citrico);
+        font-family: 'UnimedSlab2020-Bd';
+    }
+    .form-register > input{
+        height: 35px;
+        border-radius: 6px;
+        border: none;
+        outline: none;
+        font-size: 12px;
+        padding-left: 8px;
+    }
+    /* ----- FOOTER ----- */
+    footer{
+        padding: 3% 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        font-family: 'UnimedSlab2020-Sb';
+        background-color: var(--branco);
+        row-gap: 30px;
+    }
+    /* FOOTER1 */
+    .phones{
+        font-size: 2rem;
+    }
+    .social{
+        font-size: 2rem;
+    }
+    /* FOOTER2 */
+    .footer2 img{
+        height: 50px;
+    }
+    /* FOOTER3 */
+    .footer3{
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #nav-web{
+        display: none;
+    }
+    #nav-mobile-disabled{
+        visibility: visible;
+        background-color: black;
+        opacity: 80%;
+        height: var(--nav-height);
+        width: 100vw;
+        align-items: flex-start;
+        padding-top: 5px;
+        display: flex;
+        position: fixed;
+        z-index: 1;
+    }
+    #nav-mobile-enabled{
+        visibility: hidden;
+        background-color: black;
+        opacity: 80%;
+        height: 220px;
+        width: 100vw;
+        align-items: flex-start;
+        flex-direction: column;
+        padding-top: 5px;
+        display: flex;
+        position: fixed;
+        z-index: 1;
+    }
+    .list-menu{
+        font-family: 'UnimedSans2020-Sb';
+        margin-top: 20px;
+        cursor: pointer;
+        font-size: 16px;
+        color: var(--branco);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        row-gap: 10px;
+    }
+    .head-nav{
+        opacity: 80%;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+    }
+    /* NAO MEXER */
+    .nav-left{
+        width: 100vw;
+        position: relative;
+        justify-content: center;
+    }
+    .area-nav-right{
+        align-items: center;
+        width: 100%;
+        position: fixed;
+        display: flex;
+        justify-content: flex-end;
+        align-content: center;
+    }
+    .nav-right{
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        margin-right: 16px;
+        font-size: 24px;
+        color: var(--cinza);
+    }
+    .banner-first{
+        --height-banner: 700px;
+        background: url('../assets/IMAGES/MOBILE/bannerFirst.png');
+        background-repeat: no-repeat;
+        background-size: 100vw var(--height-banner);
+        height: calc(var(--height-banner));
+        max-width: 100vw;
+        max-width: 100%;
+        display: block;
+    }
+    .banner-second{
+        --height-banner: 790px;
+        color: var(--branco);
+        background: url('../assets/IMAGES/MOBILE/bannerSecond.png');
+        background-repeat: no-repeat;
+        background-size: 100vw var(--height-banner);
+        height: calc(var(--height-banner));
+        padding: 5% 5%;
+        max-width: 100vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 5%;
+    }
+    .banner-register{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .banner-register > img{
+        height: 100px;
+    }
+    .banner-register > p{
+        text-indent: 40px;
+        text-align: justify;
+        font-family: 'UnimedSans2020-Bk';
+        font-size: 16px;
+    }
+    .video{
+        margin-top: 5%;
+        width: 100%;
+        height: 300px;
+        text-align: center;
+    }
+    .speakers{
+        color: var(--cinza-escuro2);
+        text-align: center;
+        margin: 0;
+        background-color: var(--branco);
+    }
+    .title-area-active{
+        font-size: 16px;
+        font-family: 'UnimedSlab2020-Xb';
+        color: var(--branco);
+        position: relative;
+        top: 25px;
+        padding: 10px 20px;
+        background-color: var(--verde);
+        border-radius: 10px 10px 0px 10px;
+        width: 200px;
+    }
+    .area-benefits{
+        width: 730px;
+        grid-template-columns: repeat(1, 1fr);
+        max-width: fit-content;
+        display: grid;
+        column-gap: 30px;
+        row-gap: 30px;
+        justify-items: center;
+    }
+    .area-form-register{
+        --height-banner: 490px;
+        padding: 5% 10%;
+        color: var(--branco);
+        background: url('../assets/IMAGES/MOBILE/bannerRegister.png');
+        background-repeat: no-repeat;
+        background-size: 100vw var(--height-banner);
+        height: calc(var(--height-banner));
+        max-width: 100vw;
+        display: flex;
+        row-gap: 30px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .title-speakers{
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+        font-size: 20px;
+    }
+    .title-speakers > p::before{
+        content: '';
+    }
+    .date-title-speacker{
+        font-size: 16px;
+    }
+    .row-area-photo{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 30px;
+    }
+    .form-register{
+        width: 100%;
+    }
+    .title-form-register{
+        background-color: cornflowerblue;
+        background: url('../assets/IMAGES/MOBILE/titleBannerRegister.png');
+        background-repeat: no-repeat;
+        background-size: 186px 85px;
+        width: 186px;
+        height: 85px;
+    }
+    .button-medium{
+        font-family: 'UnimedSlab2020-Bd';
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        padding: 12px 0px;
+        border-radius: 5px;
+        background-color: var(--verde-citrico);
+        color: var(--branco);
+        font-size: 1.3rem;
+    }
+    /* FOOTER1 */
+    .footer1{
+        font-size: 2.5rem;
+        row-gap: 10px;
+    }
+    .phones{
+        font-size: 2rem;
+    }
+    .social{
+        font-size: 2.5rem;
+    }
+    .social img{
+        height: 40px;
+    }
+}

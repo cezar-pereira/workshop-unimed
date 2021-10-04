@@ -1,0 +1,366 @@
+:root {
+    /* Colors: */
+    --cinza: #EAEAEA;
+    --cinza-escuro: #65656C;
+    --cinza-escuro2: #707070;
+    --cinza-escuro3: #414141;
+    --cinza-medio: #B2B2B2;
+    --verde-institucional: #007C3E;
+    --verde-citrico: #9CC544;
+    --verde: #005C51;
+    --verde-claro: #BAC61D;
+    --branco: #FFFFFF;
+    --roxo: #42245E;
+    --laranja: #EE762B;
+    --laranja-escuro: #E95A00;
+    /* Paddings */
+    --primary-padding: 0 15%;
+    --primary-margin: 0 10%;
+    --nav-height: 70px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+}
+body{
+    background-color: var(--cinza);
+}
+#nav-web{
+    padding: var(--primary-padding);
+    background-color: black;
+    opacity: 80%;
+    height: var(--nav-height);
+    width: 100%;
+    justify-content: space-between;
+    position: fixed;
+    display: flex;
+    z-index: 1;
+}
+#nav-mobile-disabled{
+    display: none;
+}
+#nav-mobile-enabled{
+    display: none;
+}
+.nav-left{
+    width: 100%;
+    align-items: center;
+    display: flex;
+   justify-content: flex-start;
+}
+.nav-right{
+    color: var(--cinza);
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 20px;
+    align-items: center;
+}
+.button:hover, .button-large:hover, .button-medium:hover, .banner-first:hover{
+    cursor: pointer;
+}
+.logo{
+    max-height: 60px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 22px;
+    border-radius: 5px;
+    background-color: var(--verde-citrico);
+    color: var(--branco);
+    font-size: 1.3rem;
+}
+.button-medium{
+    font-family: 'UnimedSlab2020-Bd';
+    display: flex;
+    justify-content: center;
+    padding: 16px 0;
+    border-radius: 5px;
+    background-color: var(--verde-citrico);
+    color: var(--branco);
+    font-size: 1.8rem;
+}
+.button-large{
+    font-family: 'UnimedSans2020-Bd';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0;
+    border-radius: 5px;
+    background-color: var(--verde-citrico);
+    color: var(--branco);
+    font-size: 1.5rem;
+}
+.banner-first{
+    --height-banner: 485px;
+    background: url('../assets/IMAGES/WEB/BannerPrincipal/BannerPrincipal-FHD.png');
+    background-repeat: no-repeat;
+    background-size: 100vw var(--height-banner);
+    height: calc(var(--height-banner));
+    max-width: 100vw;
+    max-width: 100%;
+    display: block;
+}
+.banner-second{
+    --height-banner: 485px;
+    color: var(--branco);
+    background: url('../assets/IMAGES/WEB/BannerSecundario/BannerSecundario.png');
+    background-repeat: no-repeat;
+    background-size: 100vw var(--height-banner);
+    height: calc(var(--height-banner) - var(--nav-height));
+    padding: 2% 15%;
+    max-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15%;
+}
+.banner-register{
+    width: 50%;
+    height: 100%;
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.banner-register > img{
+    height: 130px;
+}
+.banner-register > p{
+    text-indent: 40px;
+    text-align: justify;
+    font-family: 'UnimedSans2020-Bk';
+    font-size: 18px;
+}
+.video{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+.line-green{
+    height: 10px;
+    width: 100%;
+    background-color: var(--verde-citrico);
+}
+.area-active{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: var(--primary-padding);
+    margin-bottom: 5%;
+}
+.title-area-active{
+    font-size: 35px;
+    font-family: 'UnimedSlab2020-Xb';
+    color: var(--branco);
+    position: relative;
+    top: 35px;
+    padding: 10px 20px;
+    background-color: var(--verde);
+    border-radius: 10px 10px 0px 10px;
+    width: 400px;
+}
+.line-area-active{
+    width: 100%;
+    background-color: var(--cinza-medio);
+    height: 8px;
+}
+.box-area-active{
+    padding: 5% 10%;
+    background-color: var(--branco);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+}
+.area-benefits{
+    width: 730px;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: fit-content;
+    display: grid;
+    column-gap: 30px;
+    row-gap: 30px;
+    justify-items: center;
+}
+.box-benefits{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px;
+    justify-content: center;
+    font-family: 'UnimedSlab2020-Bd';
+    color: var(--cinza-escuro3);
+    font-size: 22px;
+    width: 350px;
+    height: 350px;
+    box-shadow: 1px 4px 9px #00000029;
+    border-radius: 10px;
+}
+.box-benefits > img{
+    width: 160px;
+    height: 140px;
+    margin-bottom: 20px;
+}
+.speakers{
+    color: var(--cinza-escuro2);
+    text-align: center;
+    margin: var(--primary-margin);
+    background-color: var(--branco);
+}
+.title-speakers{
+    font-family: 'UnimedSans2020-Bd';
+    font-size: 26px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: baseline;
+}
+.title-speakers > p::before{
+    content: '\00a0- ';
+}
+.date-title-speacker{
+    font-family: 'UnimedSans2020-Rg';
+}
+.subtitle-speakers{
+    font-family: 'UnimedSans2020-Rg';
+    font-size: 20px;
+}
+.name-speakers{
+    font-family: 'UnimedSans2020-Sb';
+    font-size: 25px;
+}
+.occupation-speakers{
+    font-family: 'UnimedSans2020-Bk';
+    font-size: 23px;
+}
+.row-area-photo{
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+.area-photo > img{
+    padding: 20px 8px 0px 8px;
+    border: 8px solid var(--verde);
+    border-radius: 12px 12px 0px 12px;
+    height: 200px;
+    width: 220px;
+}
+.area-form-register{
+    --height-banner: 485px;
+    padding: var(--primary-padding);
+    color: var(--branco);
+    background: url('../assets/IMAGES/WEB/BannerInscreva-se/BannerInscreva-se.png');
+    background-repeat: no-repeat;
+    background-size: 100vw var(--height-banner);
+    height: calc(var(--height-banner) - var(--nav-height));
+    max-width: 100vw;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 50% 50%;
+}
+.title-form-register{
+    background: url('../assets/IMAGES/WEB/BannerInscreva-se/Titutlo.png');
+    background-repeat: no-repeat;
+    background-size: 334px 149px;
+    height: 149px;
+    width: 334px;
+}
+.form-register{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+.form-register > input{
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding-left: 8px;
+}
+/***** REMOVE ARROWS INPUT NUMBER *****/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.form-register > label{
+    font-size: 20px;
+    color: var(--verde-citrico);
+    font-family: 'UnimedSlab2020-Bd';
+}
+.form-register >:last-child{
+    margin-top: 20px;
+}
+/* ----- FOOTER ----- */
+footer{
+    padding: 3% 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    font-family: 'UnimedSlab2020-Sb';
+    background-color: var(--branco);
+    row-gap: 30px;
+}
+/* FOOTER1 */
+.footer1{
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+    color: var(--cinza-escuro);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.phones{
+    font-size: 4rem;
+}
+.social{
+    font-size: 2.5rem;
+}
+/* FOOTER2 */
+.footer2{
+    width: 100%;
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--cinza-escuro);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer2 > img{
+    height: 60px;
+}
+/* FOOTER3 */
+.footer3{
+    font-family: 'UnimedSans2020-Rg';
+    text-align: center;
+    color: var(--cinza-escuro);
+    font-size: 2.2rem;
+}

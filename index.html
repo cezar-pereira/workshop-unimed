@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaQuery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="js/script.js"></script>
+    <title>Workshop Unimed</title>
+</head>
+<body>
+    <!-- NAV-WEB -->
+    <nav id="nav-web">
+        <div class="nav-left"><img class="logo" src="assets/IMAGES/logoUnimed.svg" alt="" srcset=""></div>
+        <div class="nav-right">
+            <div onclick="goToPosition('#form-register')" class="button">INSCRIÇÃO</div>
+            <div onclick="goToPosition('#benefits')" class="button">MÓDULOS</div>
+            <div onclick="goToPosition('#speakers')" class="button">PALESTRANTES</div>
+            <div onclick="goToPosition('#footer')" class="button">CONTATO</div>
+        </div>
+    </nav>
+    <!-- NAV-MOBILE -->
+    <nav id="nav-mobile-disabled">
+        <div class="head-nav">
+            <div class="nav-left" ><img class="logo" src="assets/IMAGES/logoUnimed.svg" alt="" srcset=""></div>
+            <div class="area-nav-right">
+                <div class="nav-right" onclick="showMenu()"><i class="fas fa-bars"></i></div>
+            </div>
+        </div>
+    </nav>
+    <nav id="nav-mobile-enabled">
+        <div class="head-nav">
+            <div class="nav-left" ><img class="logo" src="assets/IMAGES/logoUnimed.svg" alt="" srcset=""></div>
+            <div class="area-nav-right">
+                <div class="nav-right" onclick="hideMenu()"><i class="fas fa-times"></i></div>
+            </div>
+        </div>
+        <div class="list-menu">
+            <p onclick="goToPosition('#form-register')" >INSCRIÇÃO</p>
+            <p onclick="goToPosition('#benefits')" >MÓDULOS</p>
+            <p onclick="goToPosition('#speakers')" >PALESTRANTES</p>
+            <p onclick="goToPosition('#footer')" >CONTATO</p>
+        </div>
+    </nav>
+    <!-- BANNER FIRST -->
+    <div onclick="goToPosition('#form-register')" class="banner-first"></div>
+    <!-- BANNER SECOND -->
+    <div class="banner-second">
+        <div class="banner-register">
+            <img src="assets/IMAGES/SHARED/LogoWorkshopUnimed.svg" alt="" srcset="">
+            <p>Oportunidade exclusiva para você saber mais sobre o atual panorama do mercado financeiro e os modelos de investimentos utilizados na saúde suplementar. Tudo isso com renomados profissionais, referências no mercado. Está interessado em se aprofundar sobre o assunto? Participe e fique por dentro das tendências e vantagens de investir nesses modelos de negócio.</p>
+            <div onclick="goToPosition('#form-register')" class="button-large">FAÇA SUA INSCRIÇÃO!</div>
+        </div>
+        <div class="video">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/eZU8wmVQDbA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <!-- LINE -->
+    <div class="line-green"></div>
+    <!-- BENEFIT -->
+    <div class="area-active" id="benefits">
+        <div class="title-area-active">
+            <p>VANTAGENS</p>
+        </div>
+        <div class="line-area-active"></div>
+        <div class="box-area-active">
+            <div class="area-benefits">
+                <div class="box-benefits">
+                    <img src="assets/IMAGES/SHARED/benefits/1.svg" alt="" srcset="">
+                    <p>PROFISSIONAIS RENOMADOS</p>
+                </div>
+                <div class="box-benefits">
+                    <img src="assets/IMAGES/SHARED/benefits/2.svg" alt="" srcset="">
+                    <p>AO VIVO E INTERATIVO</p>
+                </div>
+                <div class="box-benefits">
+                    <img src="assets/IMAGES/SHARED/benefits/3.svg" alt="" srcset="">
+                    <p>EXCLUSIVO PARA SÓCIO COOPERADOS DA UNIMED MACEIÓ</p>
+                </div>
+                <div class="box-benefits">
+                    <img src="assets/IMAGES/SHARED/benefits/4.svg" alt="" srcset="">
+                    <p>CURSO 100% ONLINE</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- SPEAKERS -->
+    <div class="area-active" id="speakers">
+        <div class="title-area-active">
+            <p>PALESTRANTES</p>
+        </div>
+        <div class="line-area-active"></div>
+        <div class="box-area-active">
+            <div class="speakers" >
+                <div class="title-speakers"><div class="date-title-speacker">20/10</div><p>Economia e Saúde Suplementar</p></div>
+                <div class="subtitle-speakers">O atual panorama da saúde suplementar, destacando as novas práticas e ações que estão em alta nesse cenário.</div>
+                <div class="title-speakers">Palestrantes:</div>
+                <div class="row-area-photo">
+                    <div class="area-photo">
+                        <img src="assets/IMAGES/SHARED/palestrantes/FernandoPaiva/FotoFernandoPaiva.png" alt="" srcset="">
+                        <div class="name-speakers">Fernando Paiva</div>
+                        <div class="occupation-speakers">Presidente Unimed Natal</div>
+                    </div>
+                    <div class="area-photo">
+                        <img src="assets/IMAGES/SHARED/palestrantes/SamuelFlam/FotoSamuelFlan.png" alt="" srcset="">
+                        <div class="name-speakers">Samuel Flam</div>
+                        <div class="occupation-speakers">Presidente Unimed BH</div>
+                    </div>
+                    <div class="area-photo">
+                        <img src="assets/IMAGES/SHARED/palestrantes/AdrielBranco/FotoAdrielBranco@2x.png" alt="" srcset="">
+                        <div class="name-speakers">Adriel Branco</div>
+                        <div class="occupation-speakers">XVI Finance</div>
+                    </div>
+                </div>
+        
+                <div class="title-speakers"><div class="date-title-speacker">10/11</div><p>Cases e tendências de novos modelos de negócios na saúde suplementar</p></div>
+                <div class="subtitle-speakers">O atual panorama da saúde suplementar, destacando as novas práticas e ações que estão em alta nesse cenário.</div>
+                <div class="title-speakers">Palestrantes:</div>
+                <div class="row-area-photo">
+                    <div class="area-photo">
+                        <img src="assets/IMAGES/SHARED/palestrantes/QuadroVazio.png" alt="" srcset="">
+                        <div class="name-speakers">Fernando</div>
+                        <div class="occupation-speakers">Equatorial</div>
+                    </div>
+                    <div class="area-photo">
+                        <img src="assets/IMAGES/SHARED/palestrantes/QuadroVazio.png" alt="" srcset="">
+                        <div class="name-speakers">Adelson Severino Chagas</div>
+                        <div class="occupation-speakers">- - -</div>
+                    </div>
+                    <div class="area-photo">
+                        <img src="assets/IMAGES/SHARED/palestrantes/AdrielBranco/FotoAdrielBranco.png" alt="" srcset="">
+                        <div class="name-speakers">Adriel Branco</div>
+                        <div class="occupation-speakers">XVI Finance</div>
+                    </div>
+                </div>
+        
+                <div class="title-speakers"><div class="date-title-speacker">25/11</div><p>Cenário Econômico e Fundos de Investimentos Imobiliários</p></div>
+                <div class="title-speakers">Palestrantes:</div>
+                <div class="row-area-photo">
+                    <div></div>
+                    <div class="area-photo">
+                        <img src="assets/IMAGES/SHARED/palestrantes/AdrielBranco/FotoAdrielBranco.png" alt="" srcset="">
+                        <div class="name-speakers">Adriel Branco</div>
+                        <div class="occupation-speakers">XVI Finance</div>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FORM -->
+    <div class="area-form-register" id="form-register">
+        <div class="title-form-register"></div>
+        <div class="form-register">
+            <label for="crm">CRM</label>
+            <input required type="number" name="crm" id="crm">
+            <label for="name">NOME</label>
+            <input required type="text" name="name" id="name">
+            <label for="email">E-MAIL</label>
+            <input required type="email" name="email" id="email">
+            <div class="button-medium" onclick="register()">QUERO FAZER MINHA INSCRIÇÃO!</div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="footer1">
+          <div>
+            <p>Em caso de dúvidas</p>
+            <p class="phones"><i class="fas fa-phone-alt"></i> 2121-1610</p>
+            <p class="phones"><i class="fab fa-whatsapp"></i> 9 9327 8211</p>
+          </div>
+          <div class="social">
+            <p>Redes Sociais</p>
+            <a href="https://www.facebook.com/unimedbr" target="_blank" ><img class="social-icons" src="assets/IMAGES/SHARED/footer/logoFacebook.svg" alt="Facebook"></a>
+            <a href="https://www.instagram.com/unimedbr/" target="_blank" ><img class="social-icons" src="assets/IMAGES/SHARED/footer/logoInstagram.svg" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/company/unimedmaceiooficial" target="_blank" ><img class="social-icons" src="assets/IMAGES/SHARED/footer/logoLinkedin.svg" alt="Linkedin"></a>
+            <a href="https://www.youtube.com/unimedmaceiooficial" target="_blank" ><img class="social-icons" src="assets/IMAGES/SHARED/footer/logoYoutube.svg" alt="Youtube"></a>
+          </div>
+        </div>
+        <div class="footer2">
+            <a href="http://unimed.me/somoscoop" target="_blank" ><img src="assets/IMAGES/SHARED/footer/logoSomosCoop.svg" alt="Somos Coop"></a>
+            <a href="http://www.ans.gov.br/" target="_blank" ><img src="assets/IMAGES/SHARED/footer/logoANS.png" alt="Logo ANS"></a>
+            <a href="http://www.ans.gov.br/" target="_blank" ><img src="assets/IMAGES/SHARED/footer/logoRegistroANS.png" alt="Número ANS"></a>
+        </div>
+        <div class="footer3"><p>Copyright 2001 - 2021 Unimed do Brasil - Todos os direitos reservados</p></div>
+    </footer>
+</body>
+</html>
